@@ -19,8 +19,8 @@ https://github.com/Nuullll/SpikeRRAM
 
 ### Testing Tasks
 
-- [] LRS, HRS
-- [] RESET/SET: single pulse with different voltages
+- [ ] LRS, HRS
+- [ ] RESET/SET: single pulse with different voltages
 
 ## SNet Algorithm Demo
 
@@ -49,10 +49,10 @@ https://github.com/Nuullll/SpikeRRAM
 
 #### `|w(t) - w_bound|` to `w_max - w_min`
 
-- [] Performance drop:
+- [ ] Performance drop:
 
 #### Reduce time difference interest window
 
-- [] Reduce to `n` timesteps:
+- [ ] Reduce to `n` timesteps:
 
 
