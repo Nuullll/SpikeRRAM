@@ -5,24 +5,24 @@ https://github.com/Nuullll/SpikeRRAM
 
 ### Overall
 
-[ ] README doc.
+- [ ] README doc.
 
-[ ] Python-c interface specification.
+- [ ] Python-c interface specification.
 
 ### SpikeNet Sim Software
 
-[ ] Downscaling inputs -> 11x11.
+- [ ] Downscaling inputs -> 11x11.
 
-[ ] I/O.
+- [ ] I/O.
 
 ### Array Tester Software
 
-[ ] Schedule manager design.
+- [ ] Schedule manager design.
 
-[ ] I/O.
+- [ ] I/O.
 
 ### Integration Test
 
-[ ] Build with tester-compatible legacy compiler.
+- [ ] Build with tester-compatible legacy compiler.
 
-[ ] I/O test.
+- [ ] I/O test.
