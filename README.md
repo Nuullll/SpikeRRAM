@@ -5,13 +5,15 @@ https://github.com/Nuullll/SpikeRRAM
 
 ### Overall
 
-- [ ] README doc.
+- [x] README doc.
 
 - [ ] Python-c interface specification.
 
 ### SpikeNet Sim Software
 
 - [ ] Downscaling inputs -> 11x11.
+
+- [ ] Assess concurrency level. Reduce firing rate (if necessary).
 
 - [ ] I/O.
 
