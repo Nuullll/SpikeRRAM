@@ -7,7 +7,7 @@ https://github.com/Nuullll/SpikeRRAM
 
 - [x] README doc.
 
-- [ ] Python-c interface specification.
+- [x] Python-c interface specification.
 
 ### SpikeNet Sim Software
 
@@ -42,7 +42,7 @@ MNIST dataset sequence.
 
 ### Module: snet.PoissonLayer
 
-Input layer of the SNN, implemented in python.
+Input layer of the SNN, implemented in python. ([SpikeNet](https://github.com/Nuullll/SpikeNet))
 
 Responsible for:
 
@@ -103,3 +103,49 @@ Responsible for:
 ### Module: RRAM Crossbar Array
 
 Physical RRAM crossbar array, as the DUT of the probe platform.
+
+
+## .spikes Format
+
+e.g.
+
+```plain
+[PARAMETERS]
+n_input=121
+dt=50e-9
+w_pattern=1
+w_background=5
+
+[PATTERN DATA]
+-1
+0
+32
+120
+-1
+2
+...
+89
+
+[BACKGROUND DATA]
+54
+-1
+...
+32
+```
+
+### Definition
+
+#### PARAMETERS
+
+* `n_input`: number of input neurons
+* `dt`: simulation resolution, unit: s
+* `w_pattern`: the relative width (with respect to `dt`) of each pattern spike
+* `w_background`: the relative width (with respect to `dt`) of each background spike
+
+#### PATTERN/BACKGROUND DATA
+
+* Each row contains a single integer, which represents the index of fired neuron in one timestep.
+* `-1` indicates that no neuron fires in this timestep.
+* Total simulation time = #{rows} * `dt`
+* At most one neuron is allowed to spike in each timestep. However, a `w_pattern` or `w_background` larger than `1` may lead to overlaid spikes, which is allowed.
+* Spike Time refers the very first rising edge of the spike.
